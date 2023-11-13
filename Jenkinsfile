@@ -5,7 +5,7 @@ pipeline {
 	    AWS_ACCOUNT_ID="308954559815"
 		AWS_DEFAULT_REGION="ap-south-1"
 		IMAGE_REPO_NAME="devopshint"
-		IMAGE_TAG="latest"
+		IMAGE_TAG="nodeapp"
 		REPOSITORY_URL= "308954559815.dkr.ecr.ap-south-1.amazonaws.com/devopshint"
 	}
 	
