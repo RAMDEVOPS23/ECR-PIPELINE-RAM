@@ -21,7 +21,7 @@ pipeline {
 		 
 		 stage('Cloning Git') {
 		     steps {
-			     checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mmbabu1988/docker-pipeline.git']])
+			     checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mmbabu1988/ECR-PIPELINE.git']])
 			 }
 		 }
 		 
