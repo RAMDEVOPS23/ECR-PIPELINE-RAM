@@ -3,10 +3,10 @@ pipeline {
     agent any
 	environment {
 	    AWS_ACCOUNT_ID="308954559815"
-		AWS_DEFAULT_REGION="ap-south-1"
+		AWS_DEFAULT_REGION="us-east-1"
 		IMAGE_REPO_NAME="devopshint"
 		IMAGE_TAG="nodeapp"
-		REPOSITORY_URL= "308954559815.dkr.ecr.ap-south-1.amazonaws.com/devopshint"
+		REPOSITORY_URL= "308954559815.dkr.ecr.us-east-1.amazonaws.com/devopshint"
 	}
 	
 	stages {
