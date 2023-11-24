@@ -1,12 +1,11 @@
-
 pipeline {
     agent any
 	environment {
-	    AWS_ACCOUNT_ID="308954559815"
+	    AWS_ACCOUNT_ID="982722760872"
 		AWS_DEFAULT_REGION="us-east-1"
 		IMAGE_REPO_NAME="devopshint"
-		IMAGE_TAG="nodeapp"
-		REPOSITORY_URL= "308954559815.dkr.ecr.us-east-1.amazonaws.com/devopshint"
+		IMAGE_TAG="latest"
+		REPOSITORY_URL= "982722760872.dkr.ecr.us-east-1.amazonaws.com/devopshint"
 	}
 	
 	stages {
@@ -21,7 +20,7 @@ pipeline {
 		 
 		 stage('Cloning Git') {
 		     steps {
-			     checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mmbabu1988/ECR-PIPELINE.git']])
+			     checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/RAMDEVOPS23/ECR-PIPELINE-RAM.git']])
 			 }
 		 }
 		 
